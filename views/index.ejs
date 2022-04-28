@@ -1,0 +1,363 @@
+
+<div >
+<svg class="Rectangle_99" style="margin-top:14%">
+  <rect id="Rectangle_99" rx="0" ry="0" x="0" y="0" width="559" height="182">
+  </rect>
+      <div id="Group_1"style="margin-top:14%">
+          <div>
+              <select  id="FILTER1" onchange="location = this.value;">
+                  <option value="0">FILTER:</option>
+                  <option value="1">Baseball</option>
+                  <option value="mb.html">Men's Basketball</option>
+                  <option value="3">Men's Cross Country</option>
+                  <option value="4">Men's Fencing</option>
+                  <option value="5">Men's Ice Hockey</option>
+                  <option value="6">Men's Lacrosse</option>
+                  <option value="7">Men's Soccer</option>
+                  <option value="8">Men's Swiiming & Diving</option>
+                  <option value="9">Men's Tennis</option>
+                  <option value="10">Men's Track & field</option>
+                  <option value="11">Men's Volleyball</option>
+                  <option value="12">Rugby</option>
+                  <option value="13">Women's Basketball</option>
+                  <option value="14">Women's Cross Country</option>
+                  <option value="15">Women's Fencing</option>
+                  <option value="16">Women's Soccer</option>
+                  <option value="17">Women's Swiiming & Diving</option>
+                  <option value="18">Women's Tennis</option>
+                  <option value="19">Women's Track & field</option>
+                  <option value="20">Women's Volleyball</option>
+                </select> 
+              </div> 
+          
+         
+      </div>
+      <button class="but demo" style="top: 8px;margin-top:14%" onclick="currentDiv(1)">
+        <h1 class="PREVIOUS">PREVIOUS</h1>
+        
+      </button>
+      <button class="but demo" style="top: 65px;margin-top:14%" onclick="currentDiv(2)">
+        <h1 class="LIVE">LIVE</h1>
+          
+      </button>
+      <button class="but demo" style="top: 122px;margin-top:14%"  onclick="currentDiv(3)">
+        <h1 class="UPCOMING">UPCOMING</h1>
+      </button>
+</svg>
+  
+  
+   <img id="lessthan" src="" srcset="lessthan.png 1x, lessthan@2x.png 2x"> 
+           <div class="Rectangle_100 mySlides"style="margin-top:14%">
+            <div class="Rectangle_101" style="left: 25px">
+              <% if(pevents != '') { %>
+                <% pevents.forEach(function(Pevents, index) { %>
+              <h1 class="time"><%- Pevents.time %></h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;"><%- Pevents.team1%></h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;"><%- Pevents.team2%></h1>
+              <h1 style="top: 5px; right: 25px;  position: absolute; font-weight: black; color: #101D49; font-size: 16px;"><%- Pevents.team1score%></h1>
+              <h1 style="top: 50px; right: 25px;  position: absolute; font-weight: normal; font-size: 16px;"><%- Pevents.team2score%></h1>
+
+              <!-- <a href="high.html" class="LIVE" style="top: 120px; right: 80px" >Highlights</a> -->
+              <a href="/high" class="LIVE" style="top: 120px; right: 80px">Highlights</a>
+              <% }) %>
+              <% } %>
+            
+            </div>
+
+
+            <div class="Rectangle_101" style="left: 330px;">
+
+              <h1 class="time">SUN,  MAR 20    |  FINAL</h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;">Baseball</h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;">Hartford</h1>
+              <h1 style="top: 5px; right: 25px;  position: absolute; font-weight: black; color: #101D49; font-size: 16px;">5</h1>
+              <h1 style="top: 50px; right: 25px;  position: absolute; font-weight: normal; font-size: 16px;">7</h1>
+
+            </div>  
+
+            <div class="Rectangle_101" style="right: 25px;">
+
+              <h1 class="time">TUE,  MAR 22    |    FINAL</h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;">Baseball</h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;">Seton Hall</h1>
+              <h1 style="top: 5px; right: 25px;  position: absolute; font-weight: black; color: #101D49; font-size: 16px;">8</h1>
+              <h1 style="top: 50px; right: 25px;  position: absolute; font-weight: normal; font-size: 16px;">3</h1>
+            
+            </div>
+           
+
+           </div>
+
+
+          <div class="Rectangle_100 mySlides"style="margin-top:14%">
+            <% if(live != '') { %>
+              <% live.forEach(function(Live, index) { %>
+
+            <iframe width="700" height="180" src="<%= Live.link %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <% }) %>
+            <% } %>
+          </div>
+
+          <div class="Rectangle_100 mySlides"style="margin-top:14%">
+            <div class="Rectangle_101" style="left: 25px;">
+              <% if(events != '') { %>
+                <% events.forEach(function(Events, index) { %>
+
+              <h1 class="time"><%- Events.time %></h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;"><%- Events.team1 %></h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;"><%- Events.team2 %></h1>
+              <% }) %>
+              <% } %>
+            
+            </div>
+
+
+            <div class="Rectangle_101" style="left: 330px;">
+            
+              <h1 class="time">SAT,  MAR 26    |    10:00 AM</h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;">Men's Fencing</h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;">NCCA Nationals (at Notre Dame)</h1>
+            </div>  
+            <div class="Rectangle_101" style="right: 25px;">
+            
+              <h1 class="time">SAT,  MAR 26    |    1:00 PM</h1>
+              <h1 class="team1"  style="top: 5px; 	font-weight: black;">Baseball</h1>
+              <h1 class="team1" style="top: 50px; 	font-weight: normal;">Albany</h1>
+            </div>
+           
+            
+            </div>
+
+</div>
+      <script>
+          var slideIndex = 3;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 3}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" meow", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " meow";
+          }
+          </script> 
+
+<% if(countdown != '') { %>
+  <% countdown.forEach(function(Countdown, index) { %>
+
+<!-- Countdown Start -->
+<div style="margin-top: 20%;">
+<h1>Countdown For Upcoming Event</h1>
+<div id="clockdiv">
+  <div>
+    <span name= "days" class="days" id="day"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span name = "hours" class="hours" id="hour"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span name = "minutes" class="minutes" id="minute"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span name = "seconds" class="seconds" id="second"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+</div>
+<p id="demo"></p>
+  
+
+<script>
+
+
+var deadline = new Date("<%= Countdown.date %>").getTime();
+//var deadline = Countdown.date.getTime();
+//apr 30, 2022 12:00:00
+var x = setInterval(function() {
+if(deadline !== null) {
+  var now = new Date().getTime();
+  var t = deadline - now;
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+  var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((t % (1000 * 60)) / 1000);
+  document.getElementById("day").innerHTML =days ;
+  document.getElementById("hour").innerHTML =hours;
+  document.getElementById("minute").innerHTML = minutes; 
+  document.getElementById("second").innerHTML =seconds; 
+  if (t < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "TIME UP";
+          document.getElementById("day").innerHTML ='0';
+          document.getElementById("hour").innerHTML ='0';
+          document.getElementById("minute").innerHTML ='0' ; 
+          document.getElementById("second").innerHTML = '0'; }
+  }
+}
+, 1000);
+</script>
+<% }) %>
+              <% } %>
+
+<!-- Countdown End -->
+<!-- Sport News -->
+<a href="/star" class="btn btn-primary btn-dark btn-lg">Star Player Of The Month</a>
+
+
+<div style="margin-top:5%" >
+
+
+  <% if(sportsnews != '') { %>
+    <% sportsnews.forEach(function(Sportsnews, index) { %>
+      <a href="/" class="col text-center Archives__link">
+        
+          <img style="width: 90%;" src="img/<%- Sportsnews.image %>" alt="<%- Sportsnews.title %>" loading="lazy">
+          <div>
+          <h2 class="" style="font-size:30px;"><%= Sportsnews.title %></h2 >
+            </div>
+        </div>
+      </a>
+    <% }) %>
+  <% } %>
+
+<!-- SportNews End -->
+
+
+</div>
+
+<div style="margin-top:5%">
+<!-- Archives Start -->
+<H2 style="text-align: center;">View Archives</H2>
+
+<div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4 ">
+
+
+  <% if(Archives != '') { %>
+    <% Archives.forEach(function(Archives, index) { %>
+      <a href="/" class="col text-center Archives__link">
+        <div class="Archives__img shadow">
+          <img src="img/<%- Archives.image %>" alt="<%- Archives.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- Archives.name %></div>
+        <div class="pt-1"><%- Archives.description %></div>
+      </a>
+    <% }) %>
+  <% } %>
+</div>
+
+
+</div>
+<!-- Archives End -->
+<div class="w3-border" style="margin-top: 20%;">
+  <div class="w3-bar w3-padding">
+  <div class="w3-bar-item w3-xxlarge w3-left"><b>#RollTech</b></div>
+  <div class="w3-bar-item w3-right">
+  
+  <a href="https://www.facebook.com/NJITHighlanders/" class="w3-button w3-white w3-border w3-hover-pink w3-round w3-margin-left  w3-right"><i class="w3-margin-right fa fa-facebook"></i><b>FACEBOOK</b></a>
+  <a href="https://www.youtube.com/watch?v=ENphzRGP-Eg" class="w3-button w3-white w3-border w3-hover-pink w3-round w3-margin-left  w3-right"><i class="w3-margin-right fa fa-youtube"></i><b>YOUTUBE</b></a>
+  <a href="https://www.instagram.com/accounts/login/?next=/njithighlanders/"  class="w3-button w3-white w3-border w3-hover-pink w3-round w3-margin-left  w3-right"><i class="w3-margin-right fa fa-instagram"></i><b>INSTAGRAM</b></a>
+  <a  href="https://twitter.com/njithighlanders?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  class="w3-button w3-white w3-border w3-hover-pink w3-round w3-margin-left  w3-right"><i class="w3-margin-right fa fa-twitter"></i><b>TWITTER</b></a>
+  </div>
+  </div>
+  </div>
+
+
+<!-- Latest Start -->
+
+<section class="pb-4 pt-4" style="margin-bottom: 20%;">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Latest Thoughts</h2>
+  </div>
+
+  <div  style="text-align: center;">
+
+    <% if(thoughts != '') { %>
+      <% thoughts.latest.forEach(function(Thoughts, index){ %>
+        <div class=" Archives">
+        </div>
+        <div class="pt-1" style="font-size:30px;"><%= Thoughts.description %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>No items found.</p>
+    <% } %>
+  </div>
+
+</section>
+<!-- Latest End -->
+
+
+
+<!-- Submit - Start -->
+<section class="px-4 py-5 my-5 text-center">
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Publish your Thoughts in front of thousands of people </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="/submit-Thoughts" class="btn btn-primary btn-dark btn-lg">Submit Thoughts</a>
+      <a href="/faqs" class="btn btn-primary btn-dark btn-lg">FAQS</a>
+    </div>
+    
+  </div>
+</section>
+ 
+<!-- Submit - End -->
+<div class="w3-center w3-margin" >
+  <a href="https://www.varsity.com/">
+  <img class="w3-image w3-border" src="https://raw.githubusercontent.com/nk398/Milestone0/main/Priti-Demo-M0/Priti-Demo-M0/adsense/varsityad.png" width="900px" style="display: block;margin-left: auto;
+    margin-right: auto; top:100px" alt=""></a>
+  
+  </div>
+
+<!-- sports -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2537598273745488"
+     google_adtest = "on";
+
+     data-ad-slot="5711730759"
+     data-ad-format="auto"
+     
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<!-- ChatBot end -->
+
+<!-- Chat Bot - Start -->
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "6264d04fb7f91f0007655dbb";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+<!-- End of ChatBot code -->
+<!-- End of ChatBot code -->
+
+<!-- Chat Bot - Start -->

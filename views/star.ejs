@@ -1,0 +1,32 @@
+
+
+<div class="Rectangle_50">
+    <h1 class="Star_Player_of_the_Month">Star Player of the Month</h1>
+</div>
+<div class="recmeow">
+<div class="Rectangle_51">
+    <div class="Rectangle_52">
+        <% if(star != '') { %>
+            <% star.forEach(function(Star, index) { %>
+        <h1 class="MARINA_NAME"><%- Star.name %></h1>
+    </div>
+    <img src="img/<%- Star.image %>" class="MARINA_IMAGE" >
+    <h1 class="WOMENS_FENCING"><%- Star.game %></h1>
+    <h1 class="position" style="top: 180px;">POSITION : </h1>
+    <h1 class="epee" style="top: 180px; left: 46%;"><%- Star.position %></h1>
+    <svg class="Line_1" style="	top: 210px;" viewBox="0 0 329.625 1"><path id="Line_1" d="M 0 0 L 329.625 0"></path>>
+    </svg>
+
+    <h1 class="position" style="top: 230px">CLASS : </h1>
+    <h1 class="epee" style="top: 230px; left: 44%;"><%- Star.class %></h1>
+    <svg class="Line_1" style="	top: 260px;" viewBox="0 0 329.625 1"><path id="Line_1" d="M 0 0 L 329.625 0"></path>>
+    </svg>
+
+    <h1 class="position" style="top: 280px">HOMETOWN : </h1>
+    <h1 class="epee" style="top: 280px; left: 47%;"><%- Star.Hometown %></h1>
+    <svg class="Line_1" style="	top: 310px;" viewBox="0 0 329.625 1"><path id="Line_1" d="M 0 0 L 329.625 0"></path>>
+    </svg>
+    <% }) %>
+    <% } %>
+  </div>
+</div>

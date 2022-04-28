@@ -1,0 +1,19 @@
+<div  >
+    <h1 style="text-align: center; font-family:  'Arial Narrow Bold'; color: black;">Frequently Asked Questions</h1>
+  </div>
+
+<div  style="text-align: center; margin-top:10%;">
+
+    <% if(faqs != '') { %>
+      <% faqs.forEach(function(Faqs, index){ %>
+        <div class=" Archives">
+        </div>
+        <h2><%= Faqs.question %></h2>
+        <div class="pt-1" style="font-size:20px;">
+            <p><%= Faqs.answer %></p></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>No items found.</p>
+    <% } %>
+  </div>

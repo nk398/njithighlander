@@ -1,0 +1,14 @@
+<H2 style="text-align: center;">HIGHLIGHTS</H2>
+<% if(high != '') { %>
+  <% high.forEach(function(High, index){ %>
+
+<div class="row">
+
+  <iframe width="360" height="460" src="<%= High.link %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <% }) %>
+  <% } else { %>
+    <p>No items found.</p>
+  <% } %>
+
+</div>

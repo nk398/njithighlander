@@ -1,0 +1,53 @@
+<html>
+<head>
+
+    <script type="text/javascript" src="js/coaches.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+<div id="table-div" class="w3-container">
+</div>
+
+<!-- Script to populate populate table with coaches of the game  --->
+<script>
+
+    //Temp to test: coaches.html?game=m_basketball
+    //get game from url querystring
+    //coaches.php?game=m_baseball
+
+    const params = new URLSearchParams(window.location.search)
+    game = params.get('game')
+
+    /////// Get the correct object-array of coaches, corresponding to the game
+    var coaches = all_coaches.get(game);
+
+    /////////Create Table and populate
+
+    $("#table-div").append('<table id="tabl" class="w3-table-all w3-hoverable"></table>');
+    $("#tabl").append('<tr id="rowh" class="w3-black"></tr>');
+    $("#rowh").append('<th><b>IMAGE</b></th>');
+    $("#rowh").append('<th><b>NAME</b></th>');
+    $("#rowh").append('<th><b>TITLE</b></th>');
+    $("#rowh").append('<th><b>EMAIL</b></th>');
+    $("#rowh").append('<th><b>PHONE</b></th>');
+
+
+    for (var i = 0; i < coaches.length; i++) {
+        var coach = coaches[i];
+        var row =  $("#tabl").append('<tr></tr>');
+        row.append('<td><img width="100" src=' + coach.image + '/></td>');
+        row.append('<td style="vertical-align: middle;">' + coach.name + '</td>');
+        row.append('<td style="vertical-align: middle;">' + coach.title + '</td>');
+        row.append('<td style="vertical-align: middle;">' + coach.email + '</td>');
+        row.append('<td style="vertical-align: middle;">' + coach.phone + '</td>');
+    }
+
+
+</script>
+
+
+</body>
+</html>
