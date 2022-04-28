@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title != 'undefined' ? title: 'NJIT HIGHLANDER' %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+ 
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="../css/countdown.css">
+
+  <link rel="stylesheet" href="../css/menubar.css">
+
+</head>
+
+  
+<div class="navbar">
+  <!-- NJIT Logo --->
+  <a href="/"><img src="img/Nav_njit-primarylogo.svg" class="w3-image w3-left w3-margin-left" ></a>
+ 
+<!-- SPORTS -->
+ <div class="dropdown" >
+    <button class="dropbtn"><p class="w3-hover-text-red w3-hover-border-red w3-large" style="margin:50px;"><b>SPORTS</b></p>
+    </button>
+    <div class="dropdown-content"style="width: 800px;">
+      <div class="row">
+        <div class="column" >
+          <h3 class="w3-text-red "><b>MEN'S SPORTS</b></h3>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Baseball</a><a href="/coaches?game=m_baseball" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Basketball</a><a href="/coaches?game=m_basketball" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Cross Country</a><a href="/coaches?game=m_crosscountry" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Fencing</a><a href="/coaches?game=m_fencing" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Lacrosse</a><a href="/coaches?game=m_lacrosse" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Soccer</a><a href="/coaches?game=m_soccer" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Swimming &amp; Diving</a><a href="/coaches?game=m_swimdive" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Tennis</a><a href="/coaches?game=m_tennis" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Track &amp; Field</a><a href="/coaches?game=m_trackfield" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Volleyball</a><a href="/coaches?game=m_volleyball" class="w3-right w3-small">Coaches</a></div>
+        </div>
+        <div class="column" style="width:30%;">  
+          <h3 class="w3-text-red w3-xlarge"><b>WOMEN'S SPORTS</b></h3>       
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Basketball</a><a href="/coaches?game=w_basketball" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Cross Country</a><a href="/coaches?game=w_crosscountry" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Fencing</a><a href="/coaches?game=w_fencing" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Soccer</a><a href="/coaches?game=w_soccer" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Tennis</a><a href="/coaches?game=w_tennis" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Track &amp; Field</a><a href="/coaches?game=w_trackfield" class="w3-right w3-small">Coaches</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Volleyball</a><a href="/coaches?game=w_volleyball" class="w3-right w3-small">Coaches</a></div>
+          <h3 class="w3-text-red w3-xlarge"><b>CLUB SPORTS</b></h3>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Men's Bowling</a></div>
+          <div class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom"><a href="#" class="w3-left">Men's Ice Hockey</a></div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+ <!-- INSIDE ATHLETICS -->
+ <div class="dropdown">
+    <button class="dropbtn"><p class="w3-hover-text-red w3-hover-border-red w3-large" style="margin:20px;"><b>INSIDE ATHLETICS</b></p>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3 class="w3-text-red w3-xlarge"><b>CONTACT INFORMATION</b></h3>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Staff Directory</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Recruiting Information</a>
+        </div>
+        <div class="column">
+          <h3 class="w3-text-red w3-xlarge"><b>ATHLETIC DEPARTMENT</b></h3>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">2020-2021 Annual Report (PDF)</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Athletic Training</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Hall of Fame</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Highlander Fund</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Recreation/ Intramurals</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">NCAA Compliance</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Highlanders At Home</a>
+        </div>
+        <div class="column">        
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Strength & Conitioning</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Student-Athlete Development</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Leadership Programming</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Composite Calendar</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  <!-- FAN ZONE --->
+  <div class="dropdown">
+    <button class="dropbtn"><p class="w3-hover-text-red w3-hover-border-red w3-large" style="margin:20px;"><b>FAN ZONE</b></p>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3 class="w3-text-red w3-xlarge"><b>INTERACT WITH US</b></h3>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Covid-19 Spectator Policy</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">The NJIT Highlander</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Dance Team</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">NJIT Athletics Newsletter</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Pep Band</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Promotions</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Social Media Directory</a>
+        </div>
+        <div class="column">
+          <h3 class="w3-text-red w3-xlarge"><b>ON DEMAND</b></h3>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">ESPN+ Portal</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">News Archives</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">NJIT Athletics on YouTube</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Photo Gallery</a>
+        </div>
+        <div class="column">
+          <h3 class="w3-text-red w3-xlarge"><b>VISITING NJIT</b></h3>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Directions/Parking</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Visitors Team Guide</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+   <!-- FACILITIES -->
+  <div class="dropdown">
+    <button class="dropbtn"><p class="w3-hover-text-red w3-hover-border-red w3-large" style="margin:20px;"><b>FACILITIES</b></p>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column" style="width:30%;">
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">NJIT Wellness and Events Center</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Lubetkin Field at Mal Simon Stadium</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">The Naimoli Family Athletic and Recreational Facility</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Branch Brook Park</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">The Sandy and John Olson Fitness Center</a>
+        </div>
+        <div class="column" style="width:30%;">
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Facility Hours of Operation</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-light-gray w3-border-light-gray w3-border-bottom">Rental Information</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+ <!-- Red Buttons floating Right -------------------->
+<a href="https://njithighlanderstickets.universitytickets.com/" class="w3-btn w3-pink w3-hover-red w3-round w3-right" style="margin: 20px; width:8%" ><b>SHOP</b></a>      
+<a href="https://njithighlanders.com/sports/2019/12/30/supporting-njit-athletics.aspx?id=181" class="w3-btn w3-pink w3-hover-red w3-round w3-right" style="margin: 20px; width:8%" ><b>DONATE</b></a> 
+<a href="https://shopnjitgear.merchorders.com/" class="w3-btn w3-pink w3-hover-red w3-round w3-right" style="margin: 20px; width:8%" ><b>TICKETS</b></a>       
+</div>
+    
+    </header>
+
+    <main>
+      <%- body -%>
+    </main>
+
+ <!-- Archives End -->
+   <footer class="py-5">
+        <img width=100% src="/img/sponsors.png">
+        <div class="w3-container">
+          <p class="w3-left" style="padding-left: 14%"> 
+        <a href="#" class="w3-text-black" style="text-decoration: underline;">Terms of Service</a>
+         <span style="color:#eee;">|</span> 
+        <a href="#" class="w3-text-black w3-hover-background-white" style="text-decoration: underline;">Privacy Policy</a>
+        <span style="color:#eee;">|</span> 
+        </p>
+        </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
